@@ -74,3 +74,8 @@ GROUP BY tz_dropoff."Zone"
 ORDER BY total_tip_amount DESC
 LIMIT 1
 ```
+
+---
+
+## Question 7: Terraform Workflow
+**Answer:** `terraform init, terraform apply -auto-approve, terraform destroy`
