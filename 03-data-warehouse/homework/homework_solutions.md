@@ -6,7 +6,7 @@
 Loaded Yellow Taxi Trip Records for January 2024 - June 2024 from NYC TLC website into GCS bucket `homework-zoomcamp-datawarehouse-sg`.
 
 
-![Parquet files in GCS Bucket](parquet-to-bucket.png)
+![Parquet files in GCS Bucket](screenshots/parquet-to-bucket.png)
 
 ### BigQuery Setup
 
@@ -31,7 +31,7 @@ CREATE OR REPLACE TABLE yellow_taxis_sg.yellow_tripdata_non_partitioned AS
 SELECT * FROM yellow_taxis_sg.external_yellow_tripdata;
 ```
 
-![BigQuery Setup](big-query-setup.png)
+![BigQuery Setup](screenshots/big-query-setup.png)
 
 ---
 
