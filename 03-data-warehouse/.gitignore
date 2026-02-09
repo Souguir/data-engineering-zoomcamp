@@ -1,2 +1,2 @@
 *.json
-*.parquet
+*.parquet.env_encoded
