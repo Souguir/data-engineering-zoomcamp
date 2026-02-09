@@ -49,7 +49,7 @@ SELECT COUNT(DISTINCT PULocationID) FROM yellow_taxis_sg.yellow_tripdata_non_par
 
 
 
-![Question 1 Result](quiz1.png)
+![Question 1 Result](screenshots/quiz1.png)
 
 ---
 
@@ -69,9 +69,9 @@ SELECT COUNT(DISTINCT PULocationID) FROM yellow_taxis_sg.yellow_tripdata_non_par
 
 **Answer:** **0 MB for the External Table and 155.12 MB for the Materialized Table**
 
-![Question 2 - External Table (0 B)](quiz21.png)
+![Question 2 - External Table (0 B)](screenshots/quiz21.png)
 
-![Question 2 - Materialized Table (155.12 MB)](quiz22.png)
+![Question 2 - Materialized Table (155.12 MB)](screenshots/quiz22.png)
 
 ---
 
@@ -91,9 +91,9 @@ SELECT PULocationID, DOLocationID FROM yellow_taxis_sg.yellow_tripdata_non_parti
 
 **Answer:** **BigQuery is a columnar database, and it only scans the specific columns requested in the query. Querying two columns (PULocationID, DOLocationID) requires reading more data than querying one column (PULocationID), leading to a higher estimated number of bytes processed.**
 
-![Question 3 - One Column (618 MB)](quiz31.png)
+![Question 3 - One Column (618 MB)](screenshots/quiz31.png)
 
-![Question 3 - Two Columns (1.14 GB)](quiz32.png)
+![Question 3 - Two Columns (1.14 GB)](screenshots/quiz32.png)
 
 ---
 
@@ -111,7 +111,7 @@ WHERE fare_amount = 0;
 
 **Answer:** **8,333**
 
-![Question 4 Result](quiz4.png)
+![Question 4 Result](screenshots/quiz4.png)
 
 ---
 
@@ -135,7 +135,7 @@ This strategy is optimal because:
 - Partitioning by `tpep_dropoff_datetime` allows BigQuery to skip irrelevant partitions when filtering by date
 - Clustering by `VendorID` organizes data within each partition for efficient ordering and filtering
 
-![Question 5 - Creating Partitioned Table](quiz5.png)
+![Question 5 - Creating Partitioned Table](screenshots/quiz5.png)
 
 ---
 
@@ -162,9 +162,9 @@ WHERE DATE(tpep_dropoff_datetime) BETWEEN '2024-03-01' AND '2024-03-15';
 **Answer:** **310.24 MB for non-partitioned table and 26.84 MB for the partitioned table**
 
 
-![Question 6 - Non-partitioned (310.24 MB)](quiz61.png)
+![Question 6 - Non-partitioned (310.24 MB)](screenshots/quiz61.png)
 
-![Question 6 - Partitioned (26.84 MB)](quiz62.png)
+![Question 6 - Partitioned (26.84 MB)](screenshots/quiz62.png)
 
 ---
 
