@@ -210,3 +210,4 @@ marimo/_lsp/
 __marimo__/
 02-workflow-orchestration/service-account.json
 02-workflow-orchestration/service-account.json
+pipeline/ny_taxi_postgres_data/
