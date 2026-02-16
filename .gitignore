@@ -1,5 +1,20 @@
+# --- Ta configuration Module 4 ---
 .venv/
 *.duckdb
+*.duckdb.wal
 logs/
 target/
 dbt_packages/
+data/
+
+# --- Configuration Python standard ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.parquet
+.env
+.vscode/
+
+# --- Spécifique Zoomcamp ---
+02-workflow-orchestration/service-account.json
+pipeline/ny_taxi_postgres_data/

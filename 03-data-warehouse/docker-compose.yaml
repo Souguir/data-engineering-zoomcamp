@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  data-loader:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: yellow-taxi-loader
+    volumes:
+      # Mount credentials file
+      - ./gcs.json:/app/gcs.json:ro
+      # Mount download directory to persist downloaded files
+      - ./data:/app/data
+    environment:
+      DOWNLOAD_DIR: /app/data
+    working_dir: /app
